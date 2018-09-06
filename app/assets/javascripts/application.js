@@ -28,6 +28,7 @@ window.onload = function() {
 // )};
 
 $(document).ready(function(){
+
   $( "#accordion" ).accordion();
   $( "#datepicker" ).datepicker({
     beforeShowDay: $.datepicker.noWeekends

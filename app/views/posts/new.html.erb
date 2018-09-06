@@ -3,6 +3,10 @@
 
 
 <h1>Posts#new</h1>
+
+<button id="opener">open the dialog</button>
+<div id="dialog" title="Dialog Title">I'm a dialog</div>
+
 <%= form_for @post, html: {multipart: true} do |f| %>
 <%= f.text_area :caption, placeholder: 'add acaption' %><br>
 <%= f.file_field :photo %><br>
