@@ -1,0 +1,9 @@
+
+<div class="newsfeed">
+<h1>Posts#index</h1>
+<p>Find me in app/views/posts/index.html.erb</p>
+<%= @posts.each do |post| %>
+<%= image_tag(post.photo(:main)) %>
+<p><%= post.caption %></p>
+<% end %>
+</div>

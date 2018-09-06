@@ -1,0 +1,7 @@
+<h1>Posts#new</h1>
+<%= form_for @post, html: {multipart: true} do |f| %>
+<%= f.text_area :caption, placeholder: 'add acaption' %><br>
+<%= f.file_field :photo %><br>
+
+<%= f.submit 'finish' %>
+<% end %>
