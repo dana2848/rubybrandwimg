@@ -11,6 +11,31 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require jquery
+//=require jquery_ujs
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+window.onload = function() {
+    if (window.jQuery) {
+        console.log('jQuery loaded successfully')
+    } else {
+        console.log('jQuery is not running')
+    }
+}
+// $(document).ready(function(){
+// $("p:even").hide().fadeIn(2000)
+// )};
+
+$(document).ready(function(){
+  $( "#accordion" ).accordion();
+  $( "#datepicker" ).datepicker({
+    beforeShowDay: $.datepicker.noWeekends
+  });
+$("img").dbclick(function(){
+  console.log("like!");
+  $('.like-heart').fadeIn(200);
+  $('.like-heart').delay(300).fadeOut(200);
+})
+$('.like-heart').hide();
+});

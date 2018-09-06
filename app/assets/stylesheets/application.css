@@ -20,7 +20,12 @@ html {
 news-feed p{
   text-align: center;
   width: 30%;
-  margin: 0 atuo;
+  margin: 0 auto;
 }
 
 post-image{}
+
+like-heart {
+  position: relative;
+  width: 10%;
+}

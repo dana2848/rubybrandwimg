@@ -4,6 +4,7 @@
 <p>Find me in app/views/posts/index.html.erb</p>
 <%= @posts.each do |post| %>
 <div class="post-image">
+  <img src="/heart.png" width="10%" class="like-heart">
 <%= image_tag(post.photo(:main)) %>
 </div>
 <p><%= post.caption %></p>
